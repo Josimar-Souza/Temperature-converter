@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  background-color: #698A7F;
+}
+
+#content-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#title-container h1 {
+  color: white;
+  font-size: 56px;
+}
+
+#temperature-converter-container {
+  background-color: white;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  min-height: 250px;
+  width: 40%;
+}
+
+#input-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+
+#input-container h2 {
+  font-weight: 400;
+}
+
+#display-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+
+#display-container h2 {
+  font-weight: 400;
+}
+
+#input {
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 8px;;
+  height: 30px;
+  padding: 5px;
+  margin-top: 30px;
+  width: 80%;
+  outline: none;
+}
+
+#result-display {
+  border-bottom: 1px solid black;
+  border-radius: 8px;;
+  height: 30px;
+  padding: 5px;
+  margin-top: 30px;
+  width: 80%;
+}
+
+#vertical-divider {
+  background-color: gray;
+  width: 1px;
+}
+
+@media only screen and (max-width: 512px) {
+  #title-container h1 {
+    color: white;
+    font-size: 32px;
+  }
+
+  #temperature-converter-container {
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #vertical-divider {
+    height: 1px;
+    width: 100%;
+  }
+
+  #input-container {
+    width: 90%;
+  }
+
+  #display-container {
+    width: 90%;
+  }
+
+  #input {
+    font-size: 16px;
+  }
+
+  #result-display {
+    font-size: 16px;
+  }
+}
